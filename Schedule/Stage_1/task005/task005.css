@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif;
+}
+body {
+  background-color: #E2E2E2;
+}
+header {
+  background: #3A3A3A;
+  width: 100%;
+  height: 70px;
+}
+header img {
+  height: 100%;
+}
+header ul {
+  list-style: none;
+  float: right;
+}
+header ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin-right: 15px;
+  font-size: 0.8em;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav {
+  width: 320px;
+  float: right;
+  margin: 2% 2%;
+  padding: 3% 2%;
+  font-size: 0.9em;
+  background-color: #fff;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 1px 1px 2px #666;
+  box-shadow: 1px 1px 2px #666;
+}
+.content {
+  overflow: hidden;
+  margin: 2% 2%;
+}
+.article {
+  width: 95%;
+  margin-bottom: 2%;
+  padding: 3% 2%;
+  background-color: #fff;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 1px 1px 2px #666;
+  box-shadow: 1px 1px 2px #666;
+}
+.article p {
+  margin: 15px 0 20px 0;
+}
+.article ul{
+  list-style: none;
+  margin: 30px 0 0 20px;
+}
+.article li{
+  margin-top: 10px;
+}
+.article h2 + p {
+  margin: 15px 0 0 0;
+  color: #7A7F83;
+  font-weight: bold;
+}
+.time {
+  margin: 15px 0 0 0;
+  color: #7A7F83;
+  font-size: 0.8em;
+}
+.img_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.img_wrap {
+  margin: 20px 0 0 20px;
+  padding: 20px;
+  border: 1px solid #D2D2D2;
+  text-align: center;
+}
+.img_wrap p {
+  margin: 0 auto;
+}
+.article ol{
+  margin: 30px 0 0 50px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+.tr_title {
+  background-color: #000;
+  color: #fff;
+}
+.table td {
+  padding-left: 10px;
+}
+.tr_last {
+  background-color: #D2D2D2;
+  font-weight: bold;
+}
+.nav h3{
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-left: 4px solid #D3D3D3;
+}
+.form_tips {
+  color: #B1B1B1;
+}
+form {
+  margin: 2% auto;;
+  font-size: 0.9em;
+}
+form table {
+  font-size: 1em;
+}
+form table tr {
+  height: 30px;
+}
+td label {
+  float: right;
+}
+tr textarea {
+  width: 180px;
+  height: 100px;
+}
+.person {
+  position: relative;
+}
+.person label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#submit {
+  margin-top: 1%;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 0.9em;
+  background-color: #3B5FD6;
+  border-radius: 8px;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 0.8em;
+}

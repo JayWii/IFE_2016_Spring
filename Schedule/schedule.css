@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:"Microsoft YaHei", Verdana, Geneva, sans-serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #AFAFAF;
+  margin: 12px 0;
+}
+ul li {
+  list-style: none;
+}
+body {
+  background-color: #0F1C2E;
+}
+header{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #122748;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #122748;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  position: absolute;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+section {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1080px;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.memberTask {
+  position: relative;
+  float: left;
+  width: 22%;
+  height: 1500px;
+  border-right: 2px solid #122748;
+}
+.first_member {
+  width: 10%;
+}
+.last_member {
+  border-right: 0;
+}
+.memberTask img {
+  position: absolute;
+  width: 100px;
+  left: -50px;
+  border-radius: 50px;
+}
+.Name {
+  position: absolute;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  left: -55px;
+  top: 120px;
+  background-color: #FF5063;
+  color: #fff;
+  border-radius: 8px;
+}
+.task_list {
+  position: absolute;
+  top: 180px;
+}
+.task {
+  position: relative;
+  margin-left: -100px;
+  width: 200px;
+  padding: 12px;
+  background-color: #122748;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 92px;
+  top: -8px;
+  border-radius: 15px;
+  background-color: #FFB74D;
+}
+.task h3 {
+  font-size: 16px;
+  color: #F3F4F5;
+}
+.task p {
+  color: #335282;
+}
+.task:hover {
+  background-color: #FFB74D;
+}
+.task:hover h3{
+  color: #000;
+}
+.task:hover a{
+  text-align: center;
+  width: 176px;
+  color: #fff;
+  background-color: #FF5B6E;
+  border-radius: 10px;
+}
+.task:hover .circle {
+  background-color: #FF5B6E;
+}
+li {
+  margin-top: 20px;
+}
+
+.copyright {
+  font-size: 0.8em;
+  line-height: 50px;
+}
