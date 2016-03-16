@@ -83,27 +83,30 @@ section {
 }
 .task {
   position: relative;
-  margin-left: -100px;
-  width: 200px;
+  margin-left: -50px;
+  width: 100px;
+  height: 45px;
   padding: 12px;
   background-color: #122748;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .circle {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 92px;
-  top: -8px;
-  border-radius: 15px;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: -20px;
+  border-radius: 16px;
   background-color: #FFB74D;
 }
 .task h3 {
   font-size: 16px;
   color: #F3F4F5;
+  text-align: center;
 }
 .task p {
   color: #335282;
@@ -117,15 +120,21 @@ section {
 .task:hover a{
   text-align: center;
   width: 176px;
+  padding: 5px;
   color: #fff;
   background-color: #FF5B6E;
   border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .task:hover .circle {
   background-color: #FF5B6E;
 }
 li {
-  margin-top: 20px;
+  margin-top: 35px;
+  position: relative;
 }
 
 .copyright {
