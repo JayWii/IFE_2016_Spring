@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  min-width: 1280px;
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+/*--------------------------header--------------------------*/
+header {
+  width: 100%;
+  height: 56px;
+}
+header img {
+  float: left;
+  margin-left: 60px;
+  padding: 13px 0;
+  height: 30px;
+}
+.nav {
+  float: right;
+  margin-right: 60px;
+}
+.nav li{
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 16px 18px;
+  /*border-bottom: 4px solid #e74f4d;*/
+}
+.nav li:hover {
+  border-bottom: 4px solid #e74f4d;
+}
+.nav li img {
+  width: 47px;
+}
+.sign_in a{
+  color: #e74f4d;
+}
+.sign_in:before {
+	content:"";
+  position:absolute;
+  top: 18px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+	background:url("img/sign_in.png") no-repeat;
+}
+
+/*--------------------------欢迎体验版块--------------------------*/
+.welcome {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 690px;
+  background: url("img/welcome.png") no-repeat;
+  background-size: cover;
+}
+.wel_wrap {
+  margin-left: 130px;
+}
+.welcome h2 {
+  position: relative;
+  left: -10px;
+  font-size: 60px;
+  color: #fff;
+}
+.welcome p {
+  color: #fff;
+  font-size: 21px;
+  line-height: 35px;
+}
+.welcome a {
+  display: block;
+  text-align: center;
+  line-height: 63px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: lighter;
+  width: 330px;
+  height: 63px;
+  margin-top: 67px;
+  background: #E7504D;
+}
+
+/*--------------------------关于版块--------------------------*/
+.abt {
+  height: 250px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+  width: 25%;
+  height: 250px;
+}
+.intro img {
+  margin-bottom: 48px;
+}
+.intro p {
+  text-align: center;
+  color: #767777;
+}
+.abt_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #EDEDEC;
+  height: 360px;
+}
+.abt_more img {
+  margin-bottom: 48px;
+}
+.abt_more h2 {
+  font-size: 54px;
+  color: #867E7A;
+}
+
+/*--------------------------活动版块--------------------------*/
+.world {
+  height: 340px;
+  background: url("img/map.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.world h3 {
+  margin-top: 52px;
+  font-size: 21px;
+  color: #fff;
+}
+.world p {
+  font-size: 12px;
+  color: #fff;
+}
+hr {
+  width: 30px;
+  margin: 10px auto 20px auto;
+  border: 1px solid #fff;
+}
+.search_wrap{
+  margin-top: 52px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 236px;
+  height: 35px;
+  margin-right: 30px;
+  background-color: #fff;
+}
+.search span {
+  margin-left: 11px;
+  font-size: 12px;
+  color: #a8aaaa;
+}
+.search img {
+  margin-left: 175px;
+}
+.world ul {
+  display: none;
+  position: absolute;
+  width: 235px;
+  border: 1px solid #BD7A67;
+  background-color: #E3E2E4;
+  top: 36px;
+  left: 0;
+  padding-bottom: 10px;
+}
+.prov ul {
+  display: block;
+}
+.search:hover ul{
+  display: block;
+}
+.world li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 12px;
+  color: #323333;
+  line-height: 26px;
+}
+.checked {
+  background-color: #BE4F49;
+}
+.checked:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 12px;
+  height: 8px;
+  background:url("img/checked.png") no-repeat;
+}
+.world li:hover{
+  background-color: #BE4F49;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  height: 390px;
+  padding: 100px 0 115px 0;
+  background-color: #F7F7F7;
+}
+.cityact {
+  text-align: center;
+  margin: 0 16px;
+}
+.imgwrap {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #CEC9C7;
+}
+.cityact h2 {
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.cityact p {
+  font-size: 12px;
+  line-height: 14px;
+}
+#act_sh {
+  font-size: 22px;
+  word-spacing: 1.4em;
+  font-weight: normal;
+}
+
+/*--------------------------新世界版块--------------------------*/
+.newworld {
+  display: flex;
+}
+.newworld .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 67%;
+  height: 565px;
+  background: url("img/newworld.png") no-repeat;
+  background-size: cover;
+}
+.newworld .right {
+  position: relative;
+  width: 33%;
+  height: 565px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: lighter;
+}
+.newworld .left h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: lighter;
+}
+.newworld .left .newworld_time {
+  font-size: 158px;
+  line-height: 160px;
+}
+.newworld .left h3 {
+  font-size: 22px;
+  color: #fff;
+}
+.newworld .right span {
+  color: red;
+}
+.newworld .right p{
+  margin: 32px 67px 50px 67px;
+  font-family: "宋体";
+  font-size: 12px;
+  line-height: 30px;
+  color: #aaa;
+}
+.newworld_detail {
+  cursor: pointer;
+  width: 103px;
+  height: 31px;
+  margin-bottom: 24px;
+  border: 1px solid red;
+  color: red;
+  background-color: #fff;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+}
+.newworld .right img {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  margin-left: -25px;
+}
+.newworld .right li{
+  cursor: pointer;
+  float: left;
+  margin-left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #929292;
+}
+#li_first {
+  margin-left: 0;
+  background-color: #929292;
+}
+.newtime {
+  overflow: hidden;
+}
+.newtime .left, .mid, .right {
+  float: left;
+  width: 33.3%;
+  height: 520px;
+}
+.newtime .left, .mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 21px;
+  font-family: "黑体";
+  line-height: 30px;
+}
+.newtime .left {
+  background-color: #E7504D;
+  color: #fff;
+}
+.newtime .left hr, .mid hr {
+  margin: 25px 0;
+}
+.newtime_detail {
+  width: 166px;
+  height: 40px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  background-color: #E7504D;
+}
