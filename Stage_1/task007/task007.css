@@ -174,6 +174,16 @@ hr {
 .search img {
   margin-left: 175px;
 }
+.searchbox {
+  background-color: #C95A51;
+  display: flex;
+  justify-content: center;
+}
+.searchbox span {
+  color: #fff;
+  font-size: 14px;
+  word-spacing: 1.5em;
+}
 .world ul {
   display: none;
   position: absolute;
