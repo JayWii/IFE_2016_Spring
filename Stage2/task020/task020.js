@@ -2,7 +2,7 @@ window.onload = function() {
   $ = function(ele) {
     return document.querySelector(ele);
   };
-  var input = $('input');
+  var input = $('textarea');
   var display = $('.display');
   var data = [];
 
