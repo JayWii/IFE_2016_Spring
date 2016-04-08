@@ -7,34 +7,50 @@ window.onload = function() {
   var data = [];
 
   function initData(mood) {
-    var inputValue = input.value;
-    var test = /^\d+$/.test(inputValue);
-    if (test || mood === 'pop' || mood === 'shift') {
-      switch (mood) {
-        case 'push':
-          data.push(inputValue);
-          break;
-        case 'pop':
-          data.pop(inputValue);
-          break;
-        case 'shift':
-          data.shift(inputValue);
-          break;
-        case 'unshift':
-          data.unshift(inputValue);
-          break;
-      }
-    }else{
-      alert("请输入数字");
-      input.value = "";
+    var inputValue = input.value.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/).filter(function(d) {
+      return d !== '';
+    });
+    input.value = "";
+    switch (mood) {
+      case 'push':
+        for (var i = 0; i < inputValue.length; i++) {
+          data.push(inputValue[i]);
+        }
+        break;
+      case 'pop':
+        data.pop(inputValue);
+        break;
+      case 'shift':
+        data.shift(inputValue);
+        break;
+      case 'unshift':
+        for (var i = 0; i < inputValue.length; i++) {
+          data.unshift(inputValue[i]);
+        }
+        break;
     }
-
   }
 
   function addEle() {
     display.innerHTML = data.map(function(d) {
       return "<div>" + d + "</div>";
     }).join('');
+  }
+
+  function search(text) {
+    addEle();
+    var flag = false;
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].indexOf(text) >= 0) {
+        flag = true;
+        var div = display.children;
+        div[i].style.backgroundColor = "blue";
+        div[i].style.color = "#fff";
+      }
+    }
+    if (!flag) {
+      alert("不存在!");
+    }
   }
 
   function output(mood) {
@@ -65,5 +81,9 @@ window.onload = function() {
   };
   display.onclick = function(e) {
     remove(e);
+  };
+  $("#search").onclick = function () {
+    var searchValue =$('input').value;
+    search(searchValue);
   };
 };

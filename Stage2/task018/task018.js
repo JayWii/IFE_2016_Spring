@@ -8,7 +8,6 @@ window.onload = function() {
 
   function initData(mood) {
     var inputValue = input.value;
-    var test = /^\d+$/.test(inputValue);
     if (test || mood === 'pop' || mood === 'shift') {
       switch (mood) {
         case 'push':
