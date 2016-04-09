@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>task021</title>
+  <style>
+    * {
+      font-family: "微软雅黑";
+    }
+    .display div {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #93D1FF;
+      color: #fff;
+      line-height: 20px;
+      cursor: pointer;
+    }
+    .hobbies .display div {
+      background-color: #FED690;
+    }
+    input {
+      height: 20px;
+      line-height: 20px;
+    }
+    textarea {
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tags">
+    <label for="tags">Tag：<input type="text" placeholder="输入tag标签"></label>
+    <div class="display tagsDisplay"></div>
+  </div>
+  <div class="hobbies">
+    <textarea name="name" rows="4" cols="25" placeholder="输入兴趣爱好"></textarea><br>
+    <button type="button" id="confirm">确认兴趣爱好</button>
+    <div class="display hobsDisplay" id="hobsDisplay"></div>
+  </div>
+  <script src="task021.js" charset="utf-8"></script>
+</body>
+
+</html>
