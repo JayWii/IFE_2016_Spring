@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task022</title>
+  <style>
+    /** {
+      margin: 0;
+      padding: 0;
+    }*/
+    section {
+      width: 960px;
+      margin: 20px auto;
+    }
+    div {
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-grow: 1;
+      border: 1px solid #000;
+    }
+    .div1 {
+      width: 700px;
+      height: 150px;
+      margin: 20px auto;
+      background-color: #fff;
+    }
+    .div2, .div3, .div4{
+      background-color: #fff;
+    }
+    button {
+      margin-left: 200px;
+    }
+  </style>
+</head>
+<body>
+  <section class="wrap">
+    <div class="div1">
+      <div class="div2">
+        <div class="div3">
+          <div class="div4"></div>
+          <div class="div4"></div>
+        </div>
+        <div class="div3">
+          <div class="div4"></div>
+          <div class="div4"></div>
+        </div>
+      </div>
+      <div class="div2">
+        <div class="div3">
+          <div class="div4"></div>
+          <div class="div4"></div>
+        </div>
+        <div class="div3">
+          <div class="div4"></div>
+          <div class="div4"></div>
+        </div>
+      </div>
+    </div>
+    <button type="button" id="preorder">前序遍历</button>
+    <button type="button" id="inorder">中序遍历</button>
+    <button type="button" id="postorder">后序遍历</button>
+  </section>
+  <script src="task022.js" charset="utf-8"></script>
+</body>
+</html>
