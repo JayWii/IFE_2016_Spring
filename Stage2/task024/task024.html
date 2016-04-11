@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>task023</title>
+  <title>task024</title>
   <style>
     /** {
       margin: 0;
@@ -11,26 +11,27 @@
     }*/
 
     section {
-      width: 960px;
+      max-width: 960px;
+      width: 100%;
       margin: 20px auto;
     }
 
     div {
-      margin: 10px;
-      padding: 10px;
+      margin: 5px;
+      padding: 5px;
       display: flex;
+      flex-direction: column;
       align-items: stretch;
       justify-content: center;
       flex-grow: 1;
       border: 1px solid #000;
       background-color: #fff;
     }
-
     button {
       margin-left: 20px;
     }
     input {
-      margin-left: 20px;
+      margin-left: 5px;
       padding: 0;
       height: 20px;
       line-height: 20px;
@@ -41,31 +42,33 @@
 <body>
   <section class="wrap">
     <section>
-      <div id="root">59
-        <div>78
-          <div>2</div>
-          <div>5</div>
-          <div>6</div>
-          <div>122</div>
-          <div>14</div>
+      <div id="root">动漫
+        <div>海贼王
+          <div>路飞</div>
+          <div>索隆</div>
+          <div>娜美</div>
+          <div>乔巴</div>
+          <div>山治</div>
         </div>
-        <div>53
-          <div>7</div>
-          <div>19</div>
-          <div>121</div>
+        <div>火影
+          <div>鸣人</div>
+          <div>佐助</div>
+          <div>小樱</div>
         </div>
-        <div>44
-          <div>102</div>
-          <div>23</div>
+        <div>名侦探柯南
+          <div>新一</div>
+          <div>基德</div>
         </div>
-        <div>66</div>
+        <div>喜羊羊与灰太狼</div>
       </div>
     </section>
     <input type="text" placeholder="输入要搜索的数字">
+    <button type="button" id="remove">删除选中的节点</button>
+    <button type="button" id="add">增加节点</button>
     <button type="button" id="df">深度优先搜索</button>
     <button type="button" id="bf">广度优先搜索</button>
   </section>
-  <script src="task023.js" charset="utf-8"></script>
+  <script src="task024.js" charset="utf-8"></script>
 </body>
 
 </html>
