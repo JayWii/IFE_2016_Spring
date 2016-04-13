@@ -71,14 +71,27 @@ window.onload = function() {
   }
 
   var nodes = root.parentNode.getElementsByTagName('div');
+  // for (var i = 0; i < nodes.length; i++) {
+  //   nodes[i].onclick = function(e) {
+  //     var target = e.target;
+  //     clear();
+  //     target.style.backgroundColor = '#71D2FF';
+  //     e.stopPropagation(); //阻止事件冒泡
+  //     selectedNode = target;
+  //   };
+  // }
   for (var i = 0; i < nodes.length; i++) {
-    nodes[i].onclick = function(e) {
-      var target = e.target;
-      clear();
-      target.style.backgroundColor = '#71D2FF';
-      e.stopPropagation(); //阻止事件冒泡
-      selectedNode = target;
-    };
+    nodes[i].className = "iconfont icon-fold";
+    var btns = document.createElement("div");
+    var addbtn = document.createElement("i");
+    var removebtn = document.createElement("i");
+    addbtn.innerHTML = "&#xe664;";
+    removebtn.innerHTML = "&#xe616;";
+    addbtn.setAttribute('class','iconfont');
+    removebtn.setAttribute('class','iconfont');
+    btns.appendChild(addbtn);
+    btns.appendChild(removebtn);
+    // nodes[i].appendChild(btns);
   }
 
   function removeNode() {

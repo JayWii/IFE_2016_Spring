@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color: #0D1E34;
+}
+button {
+  margin: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+}
+.wrap {
+  width: 80%;
+  min-width: 768px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gallery {
+  position: relative;
+  max-width: 768px;
+  max-height: 576px;
+  width: 100%;
+  height: 75%;
+  border: 2px solid #FED690;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+/*一张图片布局*/
+.onePhoto {
+  width: 100%;
+  height: 100%;
+  background-color: #71D2FF;
+}
+/*两张图片布局*/
+.twoPhoto-left {
+	width: 100%;
+	height: 100%;
+  background-color: #71D2FF;
+  background-size: cover;
+	-webkit-clip-path: polygon(0 0, 65.8% 0, 32.8% 100%, 0% 100%);
+  clip-path: polygon(0 0, 65.8% 0, 32.8% 100%, 0% 100%);
+}
+.twoPhoto-right {
+  position: absolute;
+  top: 0;
+	width: 100%;
+	height: 100%;
+  background-color: #FED690;
+  background-size: cover;
+	-webkit-clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+}
+/*三张图片布局*/
+.threePhoto-left {
+  height: 100%;
+  background-color: #71D2FF;
+  overflow: hidden;
+}
+.threePhoto-right {
+  float: right;
+  min-width: 287px;
+  height: 100%;
+  margin-left: 2px;
+}
+.threePhoto-right-top,.threePhoto-right-bottom {
+  width: 100%;
+  height: calc(50% - 1px);
+  background-color: #FED690;
+}
+.threePhoto-right-bottom {
+  margin-top: 2px;
+}
+/*四张图片布局(借助JS填充间隔)*/
+.fourPhoto {
+  float: left;
+  width: calc(50% - 1px);
+  height: calc(50% - 1px);
+  background-color: #71D2FF;
+}
+.fourPhoto:first-child {
+  margin: 0 2px 2px 0;
+}
+.fourPhoto:nth-child(2) {
+  margin-bottom: 2px;
+  background-color: #FED690;
+}
+.fourPhoto:nth-child(3) {
+  margin-right: 2px;
+  background-color: #FED690;
+}
+/*五张图片布局*/
+.fivePhoto-left, .sixPhoto-left {
+  height: 100%;
+  overflow: hidden;
+}
+.fivePhoto-right, .sixPhoto-right{
+  float: right;
+  width: 33.3333%;
+  height: 100%;
+  margin-left: 2px;
+}
+.fivePhoto-left-top, .sixPhoto-left-top{
+  height: calc(576px * 0.66666667);
+  margin-bottom: 2px;
+  background-color: #71D2FF;
+}
+.fivePhoto-left-bottom, .sixPhoto-left-bottom{
+  height: calc(576px * 0.33333);
+}
+.fivePhoto-left-bottom-left,
+.fivePhoto-left-bottom-right,
+.sixPhoto-left-bottom-left,
+.sixPhoto-left-bottom-right
+{
+  float: left;
+  height: 100%;
+  width: calc(50% - 1px);
+  background-color: #FED690;
+}
+.fivePhoto-left-bottom-right, .sixPhoto-left-bottom-right{
+  margin-left: 2px;
+  background-color: #71D2FF;
+}
+.fivePhoto-right-top {
+  height: 256px;
+  background-color: #71D2FF;
+}
+.fivePhoto-right-bottom {
+  height: calc(576px - 256px - 2px);
+  margin-top: 2px;
+  background-color: #FED690;
+}
+/*六张图片布局*/
+.sixPhoto-right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sixPhoto-right-bottom {
+  width: 100%;
+  background-color: #FED690;
+  height: calc(576px * 0.333333 - 2px);
+  margin-top: 2px;
+}
+.sixPhoto-right-top {
+  width: 100%;
+  background-color: #FED690;
+  height: calc(576px * 0.333333);
+}

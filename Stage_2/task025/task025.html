@@ -3,37 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>task024</title>
+  <title>task025</title>
   <style>
     /** {
       margin: 0;
       padding: 0;
     }*/
 
+    @font-face {font-family: "iconfont";
+      src: url('iconfont.eot?t=1460437562'); /* IE9*/
+      src: url('iconfont.eot?t=1460437562#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('iconfont.woff?t=1460437562') format('woff'), /* chrome, firefox */
+      url('iconfont.ttf?t=1460437562') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      url('iconfont.svg?t=1460437562#iconfont') format('svg'); /* iOS 4.1- */
+    }
+
+    .iconfont {
+      font-family:"iconfont" !important;
+      font-size:16px;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-fold:before { content: "\e668"; }
+    .icon-unfold:before { content: "\e664"; }
     section {
       max-width: 960px;
       width: 100%;
-      margin: 20px auto;
+      margin: 8px auto;
     }
 
     div {
+      position: relative;
       margin: 5px;
       padding: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
-      flex-grow: 1;
       border: 1px solid #000;
       background-color: #fff;
     }
-    div:before {
-      content: "展开";
-      display: inline-block;
-    }
+
     button {
       margin-left: 20px;
     }
+
     input {
       margin-left: 5px;
       padding: 0;
