@@ -3,11 +3,18 @@ $(function() {
   var $btns = $(btns);
   var divs = [];
   var imgs = [];
-  for (var i = 1; i <= 6; i++) {
-    var img = new Image();
-    img.src = 'img/img' + i + '.JPG';
-    imgs.push(img);
-  }
+  var getImg = function () {
+    $.get("http://test.facelending.com:3000/?source=500px&page=0").done(function (data) {
+      for (var item in data) {
+        var img = new Image();
+        img.src = data[item].image.small;
+        imgs.push(img);
+      }
+      //默认显示两张图片布局
+      layoutTwoPhoto();
+    });
+  }();
+
   //清除上一布局的DOM结构
   function clear() {
     $(".gallery").html("");
@@ -18,7 +25,7 @@ $(function() {
     for (var i = 0; i < number; i++) {
       var $newdiv = $("<div/>");
       divs.push($newdiv);
-      divs[i].css("background", "url" + "(" + imgs[Math.floor((Math.random()*(imgs.length)))].src + ")");
+      divs[i].css("background-image", "url" + "(" + imgs[Math.floor((Math.random()*(imgs.length)))].src + ")");
       divs[i].css("background-size", "cover");
     }
     if (displayDivs === 3) {
@@ -138,8 +145,6 @@ $(function() {
       }
     });
   }
-  console.log(imgs);
-  //默认显示两张图片布局
-  layoutTwoPhoto();
+
 
 });
